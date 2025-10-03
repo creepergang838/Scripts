@@ -314,8 +314,9 @@ end)
 local tpButton = createButton(frame, "TP GUI", 160)
 
 tpButton.MouseButton1Click:Connect(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/creepergang838/Scripts/refs/heads/main/tp.lua"))
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/creepergang838/Scripts/refs/heads/main/tp.lua"))()
     print("TP GUI button pressed! Run your script here.")
 end)
+
 
 
