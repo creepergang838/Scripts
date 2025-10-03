@@ -21,7 +21,7 @@ local roundFrame = Instance.new("UICorner")
 roundFrame.CornerRadius = UDim.new(0, 8)
 roundFrame.Parent = frame
 
--- ✅ Topbar
+-- Topbar
 local topbar = Instance.new("Frame")
 topbar.Size = UDim2.new(1, 0, 0, 30)
 topbar.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
