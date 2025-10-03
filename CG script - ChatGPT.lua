@@ -314,12 +314,8 @@ end)
 local tpButton = createButton(frame, "TP GUI", 160)
 
 tpButton.MouseButton1Click:Connect(function()
-    -- Put your custom script logic here
-    -- Example: teleport the player to a specific position
-    -- local character = player.Character or player.CharacterAdded:Wait()
-    -- local root = character:WaitForChild("HumanoidRootPart")
-    -- root.CFrame = CFrame.new(0, 50, 0) -- change coordinates as needed
-
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/creepergang838/Scripts/refs/heads/main/tp.lua"))
     print("TP GUI button pressed! Run your script here.")
 end)
+
 
