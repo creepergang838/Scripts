@@ -310,12 +310,17 @@ minimizeButton.MouseButton1Click:Connect(function()
         tweenService:Create(frame, TweenInfo.new(0.3), {Size = UDim2.new(0, 220, 0, 250)}):Play()
     end
 end)
+
 -- TP GUI Button
 local tpButton = createButton(frame, "TP GUI", 160)
 
 tpButton.MouseButton1Click:Connect(function()
     local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
+local oldGui = LocalPlayer.PlayerGui:FindFirstChild("TeleportGUI")
+if oldGui then
+    oldGui:Destroy()
+end
 
 -- Create GUI
 local gui = Instance.new("ScreenGui")
@@ -465,6 +470,7 @@ end)
 
     print("TP GUI button pressed! Run your script here.")
 end)
+
 
 
 
